@@ -3,6 +3,9 @@
 cat originaldataset.txt | cut -f 1,2,4
 
 #vervang spatie door tab in kolom 1
+
+cat originaldataset.txt | cut -f 1 | sed 's/[ ]/      /g'
+
 #cut kolom 2
 
 # delete top row containing column titles
