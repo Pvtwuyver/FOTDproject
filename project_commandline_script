@@ -2,6 +2,9 @@
 # row 1 is date AND time, row 2 is postcode, row 3 is city, row 4 is country
 cat originaldataset.txt | cut -f 1,2,4
 
+#vervang spatie door tab in kolom 1
+#cut kolom 2
+
 # delete top row containing column titles
 
 # delete last letters from postcode in column 2
