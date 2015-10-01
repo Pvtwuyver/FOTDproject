@@ -1,6 +1,6 @@
 # use raw dataset from originaldataset.txt and select date, postcode, country
 # row 1 is date AND time, row 2 is postcode, row 3 is city, row 4 is country
-# delete column 3 cities, vervang spatie voor tab
+# delete column 3 cities, vervang spatie voor tab en schrijf naar nieuw file
 cat originaldataset.txt | cut -f 1,2,4 | sed 's/[ ]/      /g'
 
 
