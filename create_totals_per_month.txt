@@ -1,2 +1,3 @@
-cat Numbersonly.txt | cut -f 1,2 | sed -E 's/[0-9]+-//' | cut -f 1 | sort | uniq -c > totals_per_Month.txt
+cat Numbersonly.txt | cut -f 1,2 | sed -E 's/[0-9]+-/01-/' | cut -f 1 | sort | uniq -c | awk '{print $2 "\t" $1}'> totals_per_Month.txt
 
+# create totals per month and place date colomn on row 1
